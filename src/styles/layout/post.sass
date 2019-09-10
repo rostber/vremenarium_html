@@ -1,0 +1,152 @@
+.post
+
+  &:after, &:before
+    content: ''
+    display: table
+    clear: both
+
+  a
+    color: $color_link
+    text-decoration: none
+
+    &:hover
+      text-decoration: underline
+
+  p
+    margin: 0 0 24px 0
+
+    &:last-child
+      margin-bottom: 0
+
+  ul, ol, h1, h2, h3, h4, h5, h6, q, blockquote, hr, table
+    margin: 0 0 46px 0
+
+    &:last-child
+      margin-bottom: 0
+
+  em, i
+    font-style: italic
+
+  strong, b
+    font-weight: bold
+
+  img
+    border: 2px solid $color_border
+    box-sizing: border-box
+    max-width: 100%
+    padding: 18px
+
+    &[align="left"]
+      margin: 10px 40px 10px 0
+
+    &[align="right"]
+      margin: 10px 0 10px 40px
+
+  hr
+    border-style: none
+    border-bottom: 2px solid $color_border
+
+  blockquote, q
+    padding: 0 0 0 57px
+    border-left: 2px solid $color_link
+    display: block
+    font-style: italic
+
+  h1, h2
+    font-size: 36px
+
+  h3
+    font-size: 32px
+
+  h4
+    font-size: 28px
+
+  h5
+    font-size: 24px
+
+  h6
+    font-size: 20px
+
+  table
+    margin-bottom: 45px
+    font-size: 22px
+    font-weight: 500
+    line-height: 1.25
+    letter-spacing: .24px
+
+  th
+    border: 2px solid #fff
+    background-color: $color_link
+    color: #fff
+    padding: 14px 34px 14px 26px
+
+  td
+    border: 2px solid $color_border
+    padding: 14px 34px 14px 26px
+    background-color: $color_border
+
+  li
+    position: relative
+    padding-left: 40px
+    margin-bottom: 16px
+    font-size: 24px
+    font-weight: 400
+    line-height: 1.25
+    letter-spacing: .24px
+
+  ul li
+    &:before
+      content: ''
+      position: absolute
+      top: 50%
+      left: 0
+      width: 10px
+      height: 10px
+      background-color: $color_link
+      transform: translateY(-50%)
+
+  ol
+    counter-reset: item
+    
+    li:before
+      content: counters(item,".") ". "
+      counter-increment: item
+      position: absolute
+      top: 50%
+      left: 0
+      transform: translateY(-50%)
+
+  .post__table-scroll
+    overflow: auto
+
+
+@media screen and (max-width: $width_mobile)
+
+  .post
+
+    img
+      padding: 4px
+
+    ul, ol, h1, h2, h3, h4, h5, h6, q, blockquote, hr, table
+      margin: 0 0 24px 0
+
+      &:last-child
+        margin-bottom: 0
+
+    h1, h2
+      font-size: 24px
+
+    h3
+      font-size: 22px
+
+    h4
+      font-size: 20px
+
+    h5
+      font-size: 18px
+
+    h6
+      font-size: 16px
+
+    blockquote, q
+      padding: 0 0 0 20px

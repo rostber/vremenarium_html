@@ -1,0 +1,11 @@
+@font-face{
+  font-family: 'Traktir-Modern';
+  src: url('../fonts/Traktir-Modern.eot');
+  src: url('../fonts/Traktir-Modern.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Traktir-Modern.woff2') format('woff2'),
+      url('../fonts/Traktir-Modern.woff') format('woff'),
+      url('../fonts/Traktir-Modern.ttf') format('truetype'),
+      url('../fonts/Traktir-Modern.svg#Traktir-Modern') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

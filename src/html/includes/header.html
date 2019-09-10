@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="stylesheet" href="css/style.bundle.css" />
+
+    <!--
+        Укажите свой API-ключ. Тестовый ключ НЕ БУДЕТ работать на других сайтах.
+        Получить ключ можно в Кабинете разработчика: https://developer.tech.yandex.ru/keys/
+        https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=75b5a5bd-6611-47dd-8bcc-0ec7fd586af9
+    -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    
+    <title>Osnovanie</title>
+  </head>
+  <body class="page">
+
+    <header class="header">
+      <div class="header__top">
+        <div class="page__center">
+          <div class="page__center-content header__top-content">
+            <div class="header__top-logo">
+              <a href="/" class="header__logo-link">
+                <img src="/img/logo.png" alt="" class="header__logo-picture" />
+              </a>
+            </div>
+            <ul class="header__top-navi">
+              <li class="header__top-navi-i header__top-navi-i_type_point">
+                г. Тверь, ул. Скворцова-Степанова, д. 25
+              </li>
+              <li class="header__top-navi-i header__top-navi-i_type_phone">
+                (7822) <span class="header__top-navi-bold">78-43-03</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header__middle">
+        <div class="page__center">
+          <div class="page__center-content header__middle-content">
+            <div class="header__middle-logo">
+              <a href="/" class="header__middle-logo-link">
+                <img src="/img/logo-mobile.svg" alt="" class="header__middle-logo-picture" />
+              </a>
+            </div>
+            <ul class="header__navi header__navi_type_main">
+              <li class="header__navi-i">
+                <a href="/about.html" class="header__navi-link">О компании</a>
+              </li>
+              <li class="header__navi-i">
+                <a href="/objects.html" class="header__navi-link">Объекты в продаже</a>
+              </li>
+              <li class="header__navi-i">
+                <a href="/spec.html" class="header__navi-link">Спецпредложения</a>
+              </li>
+              <li class="header__navi-i">
+                <a href="/doc.html" class="header__navi-link">Документация</a>
+              </li>
+              <li class="header__navi-i">
+                <a href="/objects-ready.html" class="header__navi-link">Построенные объекты</a>
+              </li>
+              <li class="header__navi-i header__navi-i_state_active">
+                <a href="/contacts.html" class="header__navi-link">Контакты</a>
+              </li>
+            </ul>
+            <div class="header__drop js-drop" data-class="header__drop_state_open">
+              <div class="header__drop-toggle js-drop-handler"></div>
+              <div class="header__drop-content">
+                <div class="header__drop-inner">
+                  <ul class="header__drop-navi">
+                    <li class="header__drop-navi-i">
+                      <a href="/about.html" class="header__drop-navi-link">О компании</a>
+                    </li>
+                    <li class="header__drop-navi-i">
+                      <a href="/objects.html" class="header__drop-navi-link">Объекты в продаже</a>
+                    </li>
+                    <li class="header__drop-navi-i">
+                      <a href="/spec.html" class="header__drop-navi-link">Спецпредложения</a>
+                    </li>
+                    <li class="header__drop-navi-i">
+                      <a href="/doc.html" class="header__drop-navi-link">Документация</a>
+                    </li>
+                    <li class="header__drop-navi-i">
+                      <a href="/objects-ready.html" class="header__drop-navi-link">Построенные объекты</a>
+                    </li>
+                    <li class="header__drop-navi-i">
+                      <a href="/contacts.html" class="header__drop-navi-link">Контакты</a>
+                    </li>
+                  </ul>
+                  <div class="header__drop-phone">
+                    <div class="header__drop-phone-value">
+                      (7822) <span class="header__drop-phone-bold">78-43-03</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% if (typeof bc_disable == 'undefined') { %>
+      <div class="header__bottom">
+        <div class="page__center">
+          <div class="page__center-content header__bottom-content">
+            <ul class="header__navi header__navi_type_bc">
+              <li class="header__navi-i">
+                <a href="/about.html" class="header__navi-link">Главная</a>
+              </li>
+              <li class="header__navi-i">
+                <a href="/objects.html" class="header__navi-link">Объекты в продаже</a>
+              </li>
+              <li class="header__navi-i">
+                <a href="/objects.html" class="header__navi-link">ЖК Победа</a>
+              </li>
+              <li class="header__navi-i">
+                <a href="/objects.html" class="header__navi-link">1 этап</a>
+              </li>
+              <li class="header__navi-i">
+                <a href="/objects.html" class="header__navi-link">Планы этажей</a>
+              </li>
+              <li class="header__navi-i header__navi-i_state_active">
+                <a href="/objects.html" class="header__navi-link">3 этаж, 2-х комнатная кв. №154</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <% } %>
+    </header>
