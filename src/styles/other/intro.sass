@@ -1,0 +1,67 @@
+.intro
+  height: 777px
+  background: rgba(73, 43, 10, 1) url(../img/intro.jpg) center top repeat-x
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+
+.intro__logo
+  position: relative
+  z-index: 10
+
+.intro__s-wrap
+  position: absolute
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  z-index: 5
+
+.intro__s
+  position: absolute
+  width: 377px
+  height: 229px
+  margin: -180px 0 0 -115px
+  opacity: 0.5
+
+.intro__s_type_1
+  left: 50%
+  top: 50%
+  animation: s1 55s linear infinite
+
+.intro__s_type_2
+  left: 45%
+  top: 45%
+  animation: s2 40s linear infinite
+
+.intro__s_type_3
+  left: 55%
+  top: 55%
+  animation: s3 50s linear infinite
+  opacity: 0.7
+
+@keyframes s1
+  from
+    transform: rotate(45deg) scale(1.5)
+  to
+    transform: rotate(405deg) scale(1.5)
+
+@keyframes s2
+  from
+    transform: rotate(0deg) scale(1.7)
+  to
+    transform: rotate(360deg) scale(1.7)
+
+@keyframes s3
+  from
+    transform: rotate(-50deg) scale(1.9)
+  to
+    transform: rotate(310deg) scale(1.9)
+
+.intro__el
+  position: absolute
+  right: 29px
+  bottom: -72px
+  width: 500px
+  height: 485px

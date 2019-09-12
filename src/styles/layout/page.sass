@@ -1,7 +1,52 @@
-.page__center
-  max-width: 1170px
-  margin: 0 auto
+.page__container
   position: relative
+  overflow: hidden
+
+.page__bg
+  content: ''
+  position: absolute
+  top: 0
+  bottom: 0
+  width: 609px
+  z-index: 5
+  background: url(../img/bg.png) 0 0 repeat-y
+  opacity: 0.5
+
+.page__bg_type_l
+  left: 0
+  animation: bg1 200s linear infinite
+
+@keyframes bg1
+  from
+    background-position: 0 50px
+  to
+    background-position: 0 1077px
+
+.page__bg_type_r
+  right: 0
+  transform: scale(-1, 1)
+  background-position: 0 0
+  animation: bg2 200s linear infinite
+
+@keyframes bg2
+  from
+    background-position: 0 1277px
+  to
+    background-position: 0 250px
+
+.page__container-inside
+  position: relative
+  z-index: 1
+  min-height: 100%
+
+.page__center
+  max-width: 1132px
+  padding: 0 15px
+  margin: 0 auto
+
+.page__relative
+  position: relative
+  z-index: 10
 
 .page__title
   font-size: 81px
@@ -14,3 +59,13 @@
   color: #fff
   background-color: #b83e15
   text-align: center
+
+
+@media screen and (max-width: 1300px)
+
+  
+  .page__bg_type_l
+    left: -320px
+
+  .page__bg_type_r
+    right: -320px
