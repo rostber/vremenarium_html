@@ -48,18 +48,62 @@
   position: relative
   z-index: 10
 
+.page__relative_type_border1, .page__relative_type_border2
+  &:after, &:before
+    content: ''
+    position: absolute
+    top: 100%
+    left: 0
+    right: 0
+    height: 28px
+    background: url('../img/border1.png') center top no-repeat
+  
+  &:before
+    top: auto
+    bottom: 100%
+    transform: scale(1,-1)
+
+.page__relative_type_border2
+  &:before, &:after
+    background-image: url('../img/border2.png')
+
+.page__title-wrap
+  text-align: center
+
 .page__title
+  display: inline-block
+  position: relative
+  padding: 19px 10px 0 10px
+  box-sizing: border-box
+  max-width: 90%
+  min-width: 200px
+  height: 136px
   font-size: 81px
   line-height: 1.2
   font-family: $font-title
   font-weight: bold
   position: relative
-  padding: 17px 0 40px 0
-  margin-bottom: 41px
+  margin-bottom: 15px
   color: #fff
   background-color: #b83e15
   text-align: center
+  background: url('../img/title.png') 0 0 repeat-x
 
+  &:before, &:after
+    content: ''
+    position: absolute
+    top: 0
+    bottom: 0
+    background: url('../img/title-edge.png') 0 0 no-repeat
+    width: 125px
+
+  &:before
+    left: -125px
+
+  &:after
+    right: -125px
+    transform: scale(-1, 1)
+  
 
 @media screen and (max-width: 1300px)
 
