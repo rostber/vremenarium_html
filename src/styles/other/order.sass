@@ -1,0 +1,59 @@
+.order
+  padding: 60px 0 120px 0
+  overflow: hidden
+
+.order__content
+  position: relative
+  box-sizing: border-box
+
+  &:before, &:after
+    content: ''
+    width: 160px
+    height: 291px
+    position: absolute
+    top: 50%
+    margin-top: -145px
+    background: url('../img/mark.png') 0 0 no-repeat
+
+  &:before
+    left: 100%
+    transform: scale(-1, 1)
+
+  &:after
+    right: 100%
+
+.order__content-inside
+  min-height: 289px
+  border: 10px solid #db391c
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3)
+  background-color: #fff
+  padding: 10px
+  display: flex
+  
+.order__content-cart
+  background-color: #ff872f
+  position: relative
+  padding: 43px
+  flex: 1 1
+  display: flex
+  align-items: justify-content
+
+  &:before, &:after
+    content: ''
+    position: absolute
+    top: 0
+    bottom: 0
+    width: 43px
+    background: url('../img/lines.png') 0 0 repeat-y
+
+  &:before
+    left: 0
+
+  &:after
+    right: 0
+    transform: scale(-1, 1)
+
+.order__content-cell
+  background-color: #fff
+  margin: 0 10px
+  flex: 1 1
