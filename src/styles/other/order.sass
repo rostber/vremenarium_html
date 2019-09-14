@@ -82,3 +82,22 @@
 
 .order__row_type_action
   text-align: center
+
+@media screen and (max-width: $width_mobile)
+
+  .order__content-inside
+    display: block
+    background-color: transparent
+    border-style: none
+    padding: 0
+
+  .order__content:after, .order__content:before, .order__content-cart:after, .order__content-cart:before
+    display: none
+
+  .order__content-cart
+    padding: 0
+    background-color: transparent
+    display: block
+
+  .order__content-cell
+    margin-bottom: 30px

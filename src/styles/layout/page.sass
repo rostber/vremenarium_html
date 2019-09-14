@@ -87,7 +87,7 @@
   min-width: 200px
   height: 136px
   font-size: 81px
-  line-height: 1.2
+  line-height: 102px
   font-family: $font-title
   font-weight: bold
   position: relative
@@ -112,12 +112,19 @@
     right: -125px
     transform: scale(-1, 1)
   
-
 @media screen and (max-width: 1300px)
 
-  
   .page__bg_type_l
     left: -320px
 
   .page__bg_type_r
     right: -320px
+
+@media screen and (max-width: $width_mobile)
+
+  .page__bg_type_l, .page__bg_type_r
+    display: none
+
+  .page__title
+    font-size: 55px
+    line-height: 93px
