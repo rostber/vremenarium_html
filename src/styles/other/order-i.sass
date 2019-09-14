@@ -1,0 +1,72 @@
+.order-i
+  display: flex
+  font-size: 16px
+  border: 2px solid #333
+  border-radius: 5px
+  margin-bottom: 2px
+
+.order-i__time
+  flex: 0 0 50%
+  text-align: center
+  font-weight: bold
+  padding: 3px 0
+
+.order-i__select
+  flex: 0 0 50%
+  box-sizing: border-box
+  text-align: left
+  position: relative
+  background-color: #ff872f
+  box-sizing: border-box
+  padding: 3px 24px 3px 12px
+  cursor: pointer
+  border-radius: 0 5px 5px 0
+
+  &:after
+    content: ''
+    width: 14px
+    height: 14px
+    background: url('../img/drop.png') 0 0 no-repeat
+    position: absolute
+    right: 4px
+    top: 50%
+    margin-top: -7px
+
+.order-i__select_type_disabled
+  background-color: #d9dadb
+  cursor: default
+
+  &:after
+    display: none
+
+.order-i__value
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+
+.order-i__drop
+  position: absolute
+  left: 0
+  top: 100%
+  z-index: 50
+  padding: 5px 0
+  border-radius: 3px
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2)
+  background-color: #fff
+  min-width: 150px
+  visibility: hidden
+  opacity: 0
+  transition: opacity linear 0.2s, visibility linear 0.2s 0.2s
+  border: 2px solid #333
+
+.order-i:hover .order-i__drop
+  opacity: 1
+  visibility: visible
+
+.order-i__drop-i
+  transition: all linear 0.2s
+  padding: 3px 12px
+  cursor: pointer
+
+  &:hover
+    background-color: #ff872f

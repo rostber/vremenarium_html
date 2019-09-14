@@ -1,0 +1,29 @@
+.legend
+  display: flex
+  margin: 12px -2px 0 0
+
+.legend__i
+  padding: 0 2px 0 25px
+  font-size: 12px
+  line-height: 1.2em
+  position: relative
+
+  &:before
+    content: ''
+    border: 1px solid #333
+    position: absolute
+    left: 0
+    top: 50%
+    width: 20px
+    height: 20px
+    margin-top: -10px
+
+.legend__i_type_free:before
+  background-color: #fff
+
+.legend__i_type_busy:before
+  background-color: #d9dadb
+
+.legend__i_type_current:before
+  background-color: #f08805
+  border-radius: 50%

@@ -241,15 +241,98 @@
               <div class="order__content-cart">
 
                 <div class="order__content-cell">
-                  <div class="order__calendar js-datepicker"></div>
+                  <div class="order__section order__section_border_bottom js-datepicker"></div>
+                  <div class="order__section">
+                    <div class="legend">
+                      <div class="legend__i legend__i_type_free">
+                        свободные даны
+                      </div>
+                      <div class="legend__i legend__i_type_busy">
+                        занятые даны
+                      </div>
+                      <div class="legend__i legend__i_type_current">
+                        выбранная дана
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="order__content-cell">
-                  2
+                  <div class="order__section order__section_border_bottom">
+                    <div class="order__title">Свободное время</div>
+
+                    <div class="order-i">
+                      <div class="order-i__time">09:00</div>
+                      <div class="order-i__select">
+                        <div class="order-i__value">-</div>
+                        <div class="order-i__drop">
+                          <div class="order-i__drop-i" data-value="1">квест <b>№1</b></div>
+                          <div class="order-i__drop-i" data-value="2">квест <b>№2</b></div>
+                          <div class="order-i__drop-i" data-value="3">квест <b>№3</b></div>
+                          <div class="order-i__drop-i" data-value="4">квест <b>№4</b></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="order-i">
+                      <div class="order-i__time">09:40</div>
+                      <div class="order-i__select order-i__select_type_disabled">
+                        <div class="order-i__value">-</div>
+                      </div>
+                    </div>
+
+                    <div class="order-i">
+                      <div class="order-i__time">10:00</div>
+                      <div class="order-i__select">
+                        <div class="order-i__value">квест <b>№2</b></div>
+                        <div class="order-i__drop">
+                          <div class="order-i__drop-i" data-value="">-</div>
+                          <div class="order-i__drop-i" data-value="1">квест <b>№1</b></div>
+                          <div class="order-i__drop-i" data-value="2">квест <b>№2</b></div>
+                          <div class="order-i__drop-i" data-value="3">квест <b>№3</b></div>
+                          <div class="order-i__drop-i" data-value="4">квест <b>№4</b></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="order-i">
+                      <div class="order-i__time">11:50</div>
+                      <div class="order-i__select">
+                        <div class="order-i__value">-</div>
+                        <div class="order-i__drop">
+                          <div class="order-i__drop-i" data-value="">-</div>
+                          <div class="order-i__drop-i" data-value="1">квест <b>№1</b></div>
+                          <div class="order-i__drop-i" data-value="2">квест <b>№2</b></div>
+                          <div class="order-i__drop-i" data-value="3">квест <b>№3</b></div>
+                          <div class="order-i__drop-i" data-value="4">квест <b>№4</b></div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
 
                 <div class="order__content-cell">
-                  3
+                  <div class="order__section order__section_border_bottom">
+                    <div class="order__title">Укажите информацию<br /><b>для связи с Вами</b></div>
+                    <form action="" method="post">
+                      <div class="order__row">
+                        <input type="text" name="name" placeholder="Ваше имя" class="input" />
+                      </div>
+                      <div class="order__row">
+                        <input type="text" name="phone" placeholder="Телефон" class="input" />
+                      </div>
+                      <div class="order__row">
+                        <input type="text" name="email" placeholder="E-mail" class="input" />
+                      </div>
+                      <div class="order__row">
+                        <textarea name="comment" placeholder="Комментарий" class="input input_type_textarea"></textarea>
+                      </div>
+                      <div class="order__row order__row_type_action">
+                        <button type="submit" class="btn">Бронировать</button>
+                      </div>
+                    </form>
+                  </div>
                 </div>
 
               </div>
