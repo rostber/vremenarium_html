@@ -1,1 +1,52 @@
 .footer
+  background-color: #492b0a
+  color: #fff
+
+.footer__content
+  padding: 60px 0
+
+.footer__row
+  display: flex
+
+.footer__cont, .footer__map
+  flex: 0 0 50%
+
+.footer__i
+  font-size: 24px
+  line-height: 1.2em
+  font-weight: bold
+  padding-left: 60px
+  position: relative
+  margin-bottom: 47px
+
+  &:before
+    content: ''
+    width: 48px
+    height: 49px
+    position: absolute
+    left: 0
+    top: 50%
+    margin-top: -25px
+
+.footer__i_type_phone:before
+  background-image: url('../img/phone.png')
+
+.footer__i_type_email:before
+  background-image: none
+
+.footer__i_type_point
+  padding-left: 45px
+  margin-bottom: 10px
+
+  &:before
+    width: 29px
+    height: 30px
+    margin-top: -15px
+    background-image: url('../img/point.png')
+
+.footer__link
+  color: #fff
+  text-decoration: none
+
+  &:hover
+    text-decoration: underline

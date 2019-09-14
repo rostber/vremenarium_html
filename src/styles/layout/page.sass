@@ -48,7 +48,7 @@
   position: relative
   z-index: 10
 
-.page__relative_type_border1, .page__relative_type_border2
+.page__relative_type_border1, .page__relative_type_border2, .page__relative_type_border3
   &:after, &:before
     content: ''
     position: absolute
@@ -66,6 +66,14 @@
 .page__relative_type_border2
   &:before, &:after
     background-image: url('../img/border2.png')
+
+.page__relative_type_border3
+  &:before, &:after
+    background-image: url('../img/border3.png')
+
+.page__relative_only_top
+  &:after
+    display: none
 
 .page__title-wrap
   text-align: center
