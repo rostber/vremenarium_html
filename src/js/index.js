@@ -5,7 +5,7 @@ require('slick-carousel');
 require('jquery-ui-bundle');
 
 $(function() {
-  init_gallery();
+  init_slider();
   init_zoom();
   init_order();
 });
@@ -46,19 +46,29 @@ function init_order() {
 }
 
 function init_zoom() {
-  $('.js-zoom').fancybox();
+  var bindZoom = function($el) {
+    $el = $el ? $el.find('.js-zoom') : $('.js-zoom');
+    $el.fancybox();
+  }
+  bindZoom();
+
   $('.js-modal').fancybox({
-    baseClass: 'modal-wrap'
+    baseClass: 'modal-wrap',
+    afterShow: function(instance, current) {
+      bindZoom(current.$content);
+      init_slider(current.$content);
+    }
   });
 }
 
-function init_gallery() {
-  $('.js-gallery').slick({
-    dots: false,
+function init_slider($el) {
+  $el = $el ? $el.find('.js-slider') : $('.js-slider');
+  $el.slick({
+    dots: true,
     infinite: true,
     speed: 300,
-    nextArrow: '<span class="gallery__next"><svg class="gallery__next-icon"><use xlink:href="/img/icon.svg#icon_arrow"></use></svg></span>',
-    prevArrow: '<span class="gallery__prev"><svg class="gallery__prev-icon"><use xlink:href="/img/icon.svg#icon_arrow"></use></svg></span>',
+    nextArrow: '<span class="slider__next"></span>',
+    prevArrow: '<span class="slider__prev"></span>',
     responsive: [{
       breakpoint: 1920,
       settings: {

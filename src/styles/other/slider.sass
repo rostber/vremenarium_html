@@ -1,0 +1,58 @@
+.slider
+  margin-top: 40px
+
+  .slick-list
+    overflow: hidden
+    margin: 0 60px
+    white-space: nowrap
+
+  .slick-dots
+    text-align: center
+    margin-top: 40px
+
+    li
+      display: inline-block
+      margin: 0 5px
+
+    button
+      overflow: hidden
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      text-indent: -9999em
+      background-color: #fff
+      cursor: pointer
+      border-style: none
+      display: block
+      padding: 0
+      outline-style: none
+
+    .slick-active button, button:hover
+      background-color: #da3b1c
+
+.slider__i
+  display: flex
+  align-items: center
+  justify-align: center
+
+.slider__picture
+  display: block
+  max-height: 280px
+  max-width: 100%
+
+.slider__next, .slider__prev
+  position: absolute
+  top: 150px
+  width: 14px
+  height: 14px
+  background: url('../img/drop.png') 0 0 no-repeat
+  cursor: pointer
+  display: block
+
+.slider__next
+  transform: rotate(90deg)
+  left: 0
+
+.slider__prev
+  transform: rotate(-90deg)
+  right: 0
