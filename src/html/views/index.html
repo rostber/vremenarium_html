@@ -1,429 +1,377 @@
-<% var data = {bc_disable: true}; %>
+<%= _.template(require('./../includes/head.html'))() %>
 
-<div class="page__container">
-  <div class="page__container-inside">
-    <div class="page__bg page__bg_type_l"></div>
-    <div class="page__bg page__bg_type_r"></div>
+<body class="page">
 
-    <%= _.template(require('./../includes/header.html'))(data) %>
+  <%= _.template(require('./../includes/header.html'))() %>
 
-    <div class="intro">
-      <img src="/img/logo.png" alt="" class="intro__logo" />
-      <div class="intro__s-wrap">
-        <img src="/img/smoke-element.png" class="intro__s intro__s_type_1" />
-        <img src="/img/smoke-element.png" class="intro__s intro__s_type_2" />
-        <img src="/img/smoke-element.png" class="intro__s intro__s_type_3" />
-      </div>
-      <img src="/img/watch.png" alt="" class="intro__el intro__el_type_1" />
+  <div class="intro">
+    <img src="/img/logo.png" alt="" class="intro__logo" />
+    <div class="intro__s-wrap">
+      <img src="/img/smoke-element.png" class="intro__s intro__s_type_1" />
+      <img src="/img/smoke-element.png" class="intro__s intro__s_type_2" />
+      <img src="/img/smoke-element.png" class="intro__s intro__s_type_3" />
     </div>
-
-    <div class="about">
-      <div class="page__center">
-        <div class="page__relative page__relative_type_border1 about__content">
-          <div class="page__title-wrap">
-            <h2 class="page__title">
-              О нас
-            </h2>
-          </div>
-          <div class="post">
-            <p style="text-align: center;">
-ВРЕМЕНОРИУМ – это <br />
-Стимпа́нк или паропа́нк (от англ. steampunk: steam — «пар» и punk — «панк») — <br />
-направление научной фантастики, включающее технологию <br />
-и декоративно-прикладное искусство,<br />
- вдохновлённое паровой энергией XIX века.<br />
-Стимпа́нк или паропа́нк (от англ. steampunk: steam — «пар» и punk — «панк») — <br />
-направление научной фантастики, включающее технологию <br />
-и декоративно-прикладное искусство,<br />
- вдохновлённое паровой энергией XIX века.<br />
-Стимпа́нк или паропа́нк (от англ. steampunk: steam — «пар» и punk — «панк») — <br />
-направление научной фантастики, включающее технологию <br />
-и декоративно-прикладное искусство,<br />
- вдохновлённое паровой энергией XIX века.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="adv">
-      <div class="page__center">
-        <div class="page__relative">
-          <div class="page__title-wrap">
-            <h2 class="page__title">
-              Преимущества
-            </h2>
-          </div>
-          <div class="adv__list">
-            <div class="adv__i">
-              <img src="/img/adv/1.png" alt="" class="adv__picture" />
-              <div class="adv__text post">
-                Отдельная<br /><b>парковка</b>
-              </div>
-            </div>
-            <div class="adv__i">
-              <img src="/img/adv/2.png" alt="" class="adv__picture" />
-              <div class="adv__text post">
-                Отдельный вход<br />на <b>1 этаже</b>
-              </div>
-            </div>
-            <div class="adv__i">
-              <img src="/img/adv/3.png" alt="" class="adv__picture" />
-              <div class="adv__text post">
-                <b>250 м<sup>2</sup></b> площадь<br />приключений
-              </div>
-            </div>
-            <div class="adv__i">
-              <img src="/img/adv/4.png" alt="" class="adv__picture" />
-              <div class="adv__text post">
-                Профессиональные<br /><b>актеры</b>
-              </div>
-            </div>
-            <div class="adv__i">
-              <img src="/img/adv/5.png" alt="" class="adv__picture" />
-              <div class="adv__text post">
-                <b>Индивидуальный</b><br />подход
-              </div>
-            </div>
-            <div class="adv__i">
-              <img src="/img/adv/6.png" alt="" class="adv__picture" />
-              <div class="adv__text post">
-                <b>Индивидуальное</b> наполнение программ
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="quest">
-      <div class="quest__mask">
-        <svg width="283" height="280">
-          <mask id="mask">
-              <g stroke="gray" stroke-width="12" fill="white">
-                  <circle cx="33%" cy="30%" r="20%" />
-                  <circle cx="52%" cy="62%" r="32%" />
-              </g>
-          </mask>
-        </svg>
-      </div>
-      <div class="page__center">
-        <div class="page__relative page__relative_type_border2 quest__content">
-          <div class="page__title-wrap">
-            <h2 class="page__title">
-              Наши квесты
-            </h2>
-          </div>
-          <div class="quest__list">
-            <div class="quest__i">
-              <div class="quest__cart">
-                <svg width="283" height="280" class="svg" class="quest__picture">
-                    <g mask="url(#mask)">
-                      <image xlink:href="/img/quest/1.jpg" width="283" height="280" />
-                    </g>
-                </svg>
-                <div class="quest__title">
-                  Квест №1
-                </div>
-                <div class="quest__text">
-                  Краткое описание, краткое описание, краткое
-                </div>
-                <div class="quest__more">
-                  <a href="#quest" class="quest__more-link js-modal">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="quest__i">
-              <div class="quest__cart">
-                <svg width="283" height="280" class="svg" class="quest__picture">
-                    <g mask="url(#mask)">
-                      <image xlink:href="/img/quest/2.jpg" width="283" height="280" />
-                    </g>
-                </svg>
-                <div class="quest__title">
-                  Квест №2
-                </div>
-                <div class="quest__text">
-                  Краткое описание, краткое описание, краткое
-                </div>
-                <div class="quest__more">
-                  <a href="#quest" class="quest__more-link js-modal">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="quest__i">
-              <div class="quest__cart">
-                <svg width="283" height="280" class="svg" class="quest__picture">
-                    <g mask="url(#mask)">
-                      <image xlink:href="/img/quest/3.jpg" width="283" height="280" />
-                    </g>
-                </svg>
-                <div class="quest__title">
-                  Квест №3
-                </div>
-                <div class="quest__text">
-                  Краткое описание, краткое описание, краткое
-                </div>
-                <div class="quest__more">
-                  <a href="#quest" class="quest__more-link js-modal">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="quest__i">
-              <div class="quest__cart">
-                <svg width="283" height="280" class="svg" class="quest__picture">
-                    <g mask="url(#mask)">
-                      <image xlink:href="/img/quest/4.jpg" width="283" height="280" />
-                    </g>
-                </svg>
-                <div class="quest__title">
-                  Квест №4
-                </div>
-                <div class="quest__text">
-                  Краткое описание, краткое описание, краткое
-                </div>
-                <div class="quest__more">
-                  <a href="#quest" class="quest__more-link js-modal">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="quest__i">
-              <div class="quest__cart">
-                <svg width="283" height="280" class="svg" class="quest__picture">
-                    <g mask="url(#mask)">
-                      <image xlink:href="/img/quest/5.jpg" width="283" height="280" />
-                    </g>
-                </svg>
-                <div class="quest__title">
-                  Квест №5
-                </div>
-                <div class="quest__text">
-                  Краткое описание, краткое описание, краткое
-                </div>
-                <div class="quest__more">
-                  <a href="#quest" class="quest__more-link js-modal">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="quest__i">
-              <div class="quest__cart">
-                <svg width="283" height="280" class="svg" class="quest__picture">
-                    <g mask="url(#mask)">
-                      <image xlink:href="/img/quest/6.jpg" width="283" height="280" />
-                    </g>
-                </svg>
-                <div class="quest__title">
-                  Квест №6
-                </div>
-                <div class="quest__text">
-                  Краткое описание, краткое описание, краткое
-                </div>
-                <div class="quest__more">
-                  <a href="#quest" class="quest__more-link js-modal">Подробнее</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hidden">
-      <div id="quest">
-        <div class="detail">
-          <div class="detail__title-wrap">
-            <div class="detail__title">
-              <div class="detail__title-inside">Квест №1</div>
-            </div>
-          </div>
-
-          <div class="detail__info">
-            <div class="detail__info-preview">
-              <img src="/uploads/quest1.jpg" class="detail__info-img" alt="" />
-            </div>
-            <div class="detail__info-text post">
-
-<b>Возрастная категория:</b> от 18 лет.<br />
-<b>Время прохождения:</b> время, затраченное на квест 
-составило 1,5 часа, поскольку выполнение квеста 
-проводилось с «техническими» перерывами на застолье.
-<b>Место проведения:</b> на природе, на пляже.<br />
-<b>Количество участников:</b> 4 человека. Данный квест 
-может пригодится и тому, кто готовит сюрприз 
-для именинника в честь его Дня Рождения, 
-а так же для совместного решения загадок 
-и поиска «сокровищ».<br />
-<b>Заданий в квесте:</b> 4 задания, которые сочетают 
-в себе активные действия и решение несложных задач.
-Необходимый реквизит: пластмассовая бутылка любого 
-размера, ручка, лопатка детская.<br />
-<b>Места-тайники:</b><br />
-1. Камни<br />
-2. Песок (земля)<br />
-<b>Жанр квеста:</b> экшен (action), необходимы 
-активные действия участников в квесте.
-            </div>
-          </div>
-
-          <div class="detail__sub-title-wrap">
-            <div class="detail__sub-title">Описание квеста (сценарий квеста)</div>
-          </div>
-
-          <div class="post">
-Собираясь с друзьями на шашлыки — на дачу или на природу, самым первым вопросом
-или заданием является конечно же, продуктовый набор и набор напитков на столе. Но, мало 
-кто задумывается о том, как развеселить, а еще лучше — удивить компанию друзей. С таким 
-вопросом столкнулся и я, когда друзья неожиданно предложили в субботу собраться и провести 
-день на свежем воздухе, с шашлычком в руках и с прекрасным видом на реку. Предложение 
-было заманчивым, и мне захотелось как-то разнообразить привычное застолье, привнести 
-«изюминку» в шашлычные посиделки. Так как в последнее время проводить квесты становится 
-популярным, я так же решился разыграть друзей квестом. Ни кого и ни о чем не предупреждая, 
-чтобы сохранить интригу, я начал подготовку. 
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="order">
-      <div class="page__center">
-        <div class="page__relative">
-          <div class="page__title-wrap">
-            <h2 class="page__title">
-              Забронировать
-            </h2>
-          </div>
-          <div class="order__content">
-            <div class="order__content-inside">
-              <div class="order__content-cart">
-
-                <div class="order__content-cell">
-                  <div class="order__section order__section_border_bottom js-datepicker"></div>
-                  <div class="order__section">
-                    <div class="legend">
-                      <div class="legend__i legend__i_type_free">
-                        свободные даны
-                      </div>
-                      <div class="legend__i legend__i_type_busy">
-                        занятые даны
-                      </div>
-                      <div class="legend__i legend__i_type_current">
-                        выбранная дана
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="order__content-cell">
-                  <div class="order__section order__section_border_bottom">
-                    <div class="order__title">Свободное время</div>
-
-                    <div class="order-i">
-                      <div class="order-i__time">09:00</div>
-                      <div class="order-i__select">
-                        <div class="order-i__value">-</div>
-                        <div class="order-i__drop">
-                          <div class="order-i__drop-i" data-value="1">квест <b>№1</b></div>
-                          <div class="order-i__drop-i" data-value="2">квест <b>№2</b></div>
-                          <div class="order-i__drop-i" data-value="3">квест <b>№3</b></div>
-                          <div class="order-i__drop-i" data-value="4">квест <b>№4</b></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="order-i">
-                      <div class="order-i__time">09:40</div>
-                      <div class="order-i__select order-i__select_type_disabled">
-                        <div class="order-i__value">-</div>
-                      </div>
-                    </div>
-
-                    <div class="order-i">
-                      <div class="order-i__time">10:00</div>
-                      <div class="order-i__select">
-                        <div class="order-i__value">квест <b>№2</b></div>
-                        <div class="order-i__drop">
-                          <div class="order-i__drop-i" data-value="">-</div>
-                          <div class="order-i__drop-i" data-value="1">квест <b>№1</b></div>
-                          <div class="order-i__drop-i" data-value="2">квест <b>№2</b></div>
-                          <div class="order-i__drop-i" data-value="3">квест <b>№3</b></div>
-                          <div class="order-i__drop-i" data-value="4">квест <b>№4</b></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="order-i">
-                      <div class="order-i__time">11:50</div>
-                      <div class="order-i__select">
-                        <div class="order-i__value">-</div>
-                        <div class="order-i__drop">
-                          <div class="order-i__drop-i" data-value="">-</div>
-                          <div class="order-i__drop-i" data-value="1">квест <b>№1</b></div>
-                          <div class="order-i__drop-i" data-value="2">квест <b>№2</b></div>
-                          <div class="order-i__drop-i" data-value="3">квест <b>№3</b></div>
-                          <div class="order-i__drop-i" data-value="4">квест <b>№4</b></div>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="order__content-cell">
-                  <div class="order__section order__section_border_bottom">
-                    <div class="order__title">Укажите информацию<br /><b>для связи с Вами</b></div>
-                    <form action="" method="post">
-                      <div class="order__row">
-                        <input type="text" name="name" placeholder="Ваше имя" class="input" />
-                      </div>
-                      <div class="order__row">
-                        <input type="text" name="phone" placeholder="Телефон" class="input" />
-                      </div>
-                      <div class="order__row">
-                        <input type="text" name="email" placeholder="E-mail" class="input" />
-                      </div>
-                      <div class="order__row">
-                        <textarea name="comment" placeholder="Комментарий" class="input input_type_textarea"></textarea>
-                      </div>
-                      <div class="order__row order__row_type_action">
-                        <button type="submit" class="btn">Бронировать</button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="news">
-      <div class="page__center">
-        <div class="page__relative page__relative_type_border1 page__relative_only_top news__content">
-          <div class="page__title-wrap">
-            <h2 class="page__title">
-              Новости
-            </h2>
-          </div>
-
-          <div class="news__i">
-            <div class="news__i-preview">
-              <img src="/uploads/news.jpg" alt="" class="news__i-img" />
-            </div>
-            <div class="news__i-content post">
-<b>Дорогие друзья!</b> у нас регулярно появляются новые программы для того,
-что бы было чем вас порадовать и удивить!<br />
-Для подростков у нас появились еще 2 новые программы 
-<b>"Караоке KIDS"</b> и <b>"БУМ УСЫ"</b><br />
-Для более юных друзей масса новых костюмов, яркого тематического 
-реквизита и программ.<br />
-Все подробности по телефону (4822) 750-652<br />
-            </div>
-        </div>
-      </div>
-    </div>
-    <%= _.template(require('./../includes/footer.html'))(data) %>
-
+    <img src="/img/watch.png" alt="" class="intro__el intro__el_type_1" />
   </div>
-</div>
+
+  <div class="about">
+    <div class="page__center">
+      <div class="page__relative page__relative_type_border1 about__content">
+        <div class="page__title-wrap">
+          <h2 class="page__title">
+            О нас
+          </h2>
+        </div>
+        <div class="post">
+          <p style="text-align: center;">
+  ВРЕМЕНОРИУМ – это <br />
+  Стимпа́нк или паропа́нк (от англ. steampunk: steam — «пар» и punk — «панк») — <br />
+  направление научной фантастики, включающее технологию <br />
+  и декоративно-прикладное искусство,<br />
+  вдохновлённое паровой энергией XIX века.<br />
+  Стимпа́нк или паропа́нк (от англ. steampunk: steam — «пар» и punk — «панк») — <br />
+  направление научной фантастики, включающее технологию <br />
+  и декоративно-прикладное искусство,<br />
+  вдохновлённое паровой энергией XIX века.<br />
+  Стимпа́нк или паропа́нк (от англ. steampunk: steam — «пар» и punk — «панк») — <br />
+  направление научной фантастики, включающее технологию <br />
+  и декоративно-прикладное искусство,<br />
+  вдохновлённое паровой энергией XIX века.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="adv">
+    <div class="page__center">
+      <div class="page__relative">
+        <div class="page__title-wrap">
+          <h2 class="page__title">
+            Преимущества
+          </h2>
+        </div>
+        <div class="adv__list">
+          <div class="adv__i">
+            <img src="/img/adv/1.png" alt="" class="adv__picture" />
+            <div class="adv__text post">
+              Отдельная<br /><b>парковка</b>
+            </div>
+          </div>
+          <div class="adv__i">
+            <img src="/img/adv/2.png" alt="" class="adv__picture" />
+            <div class="adv__text post">
+              Отдельный вход<br />на <b>1 этаже</b>
+            </div>
+          </div>
+          <div class="adv__i">
+            <img src="/img/adv/3.png" alt="" class="adv__picture" />
+            <div class="adv__text post">
+              <b>250 м<sup>2</sup></b> площадь<br />приключений
+            </div>
+          </div>
+          <div class="adv__i">
+            <img src="/img/adv/4.png" alt="" class="adv__picture" />
+            <div class="adv__text post">
+              Профессиональные<br /><b>актеры</b>
+            </div>
+          </div>
+          <div class="adv__i">
+            <img src="/img/adv/5.png" alt="" class="adv__picture" />
+            <div class="adv__text post">
+              <b>Индивидуальный</b><br />подход
+            </div>
+          </div>
+          <div class="adv__i">
+            <img src="/img/adv/6.png" alt="" class="adv__picture" />
+            <div class="adv__text post">
+              <b>Индивидуальное</b> наполнение программ
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="quest">
+    <div class="quest__mask">
+      <svg width="283" height="280">
+        <mask id="mask">
+            <g stroke="gray" stroke-width="12" fill="white">
+                <circle cx="33%" cy="30%" r="20%" />
+                <circle cx="52%" cy="62%" r="32%" />
+            </g>
+        </mask>
+      </svg>
+    </div>
+    <div class="page__center">
+      <div class="page__relative page__relative_type_border2 quest__content">
+        <div class="page__title-wrap">
+          <h2 class="page__title">
+            Наши квесты
+          </h2>
+        </div>
+        <div class="quest__list">
+          <div class="quest__i">
+            <div class="quest__cart">
+              <svg width="283" height="280" class="svg" class="quest__picture">
+                  <g mask="url(#mask)">
+                    <image xlink:href="/img/quest/1.jpg" width="283" height="280" />
+                  </g>
+              </svg>
+              <div class="quest__title">
+                Квест №1
+              </div>
+              <div class="quest__text">
+                Краткое описание, краткое описание, краткое
+              </div>
+              <div class="quest__more">
+                <a href="#quest" class="quest__more-link js-modal">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="quest__i">
+            <div class="quest__cart">
+              <svg width="283" height="280" class="svg" class="quest__picture">
+                  <g mask="url(#mask)">
+                    <image xlink:href="/img/quest/2.jpg" width="283" height="280" />
+                  </g>
+              </svg>
+              <div class="quest__title">
+                Квест №2
+              </div>
+              <div class="quest__text">
+                Краткое описание, краткое описание, краткое
+              </div>
+              <div class="quest__more">
+                <a href="#quest" class="quest__more-link js-modal">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="quest__i">
+            <div class="quest__cart">
+              <svg width="283" height="280" class="svg" class="quest__picture">
+                  <g mask="url(#mask)">
+                    <image xlink:href="/img/quest/3.jpg" width="283" height="280" />
+                  </g>
+              </svg>
+              <div class="quest__title">
+                Квест №3
+              </div>
+              <div class="quest__text">
+                Краткое описание, краткое описание, краткое
+              </div>
+              <div class="quest__more">
+                <a href="#quest" class="quest__more-link js-modal">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="quest__i">
+            <div class="quest__cart">
+              <svg width="283" height="280" class="svg" class="quest__picture">
+                  <g mask="url(#mask)">
+                    <image xlink:href="/img/quest/4.jpg" width="283" height="280" />
+                  </g>
+              </svg>
+              <div class="quest__title">
+                Квест №4
+              </div>
+              <div class="quest__text">
+                Краткое описание, краткое описание, краткое
+              </div>
+              <div class="quest__more">
+                <a href="#quest" class="quest__more-link js-modal">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="quest__i">
+            <div class="quest__cart">
+              <svg width="283" height="280" class="svg" class="quest__picture">
+                  <g mask="url(#mask)">
+                    <image xlink:href="/img/quest/5.jpg" width="283" height="280" />
+                  </g>
+              </svg>
+              <div class="quest__title">
+                Квест №5
+              </div>
+              <div class="quest__text">
+                Краткое описание, краткое описание, краткое
+              </div>
+              <div class="quest__more">
+                <a href="#quest" class="quest__more-link js-modal">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="quest__i">
+            <div class="quest__cart">
+              <svg width="283" height="280" class="svg" class="quest__picture">
+                  <g mask="url(#mask)">
+                    <image xlink:href="/img/quest/6.jpg" width="283" height="280" />
+                  </g>
+              </svg>
+              <div class="quest__title">
+                Квест №6
+              </div>
+              <div class="quest__text">
+                Краткое описание, краткое описание, краткое
+              </div>
+              <div class="quest__more">
+                <a href="#quest" class="quest__more-link js-modal">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hidden">
+    <div id="quest">
+  <%= _.template(require('./../includes/modal.html'))() %>
+    </div>
+  </div>
+
+  <div class="order">
+    <div class="page__center">
+      <div class="page__relative">
+        <div class="page__title-wrap">
+          <h2 class="page__title">
+            Забронировать
+          </h2>
+        </div>
+        <div class="order__content">
+          <div class="order__content-inside">
+            <div class="order__content-cart">
+
+              <div class="order__content-cell">
+                <div class="order__section order__section_border_bottom js-datepicker"></div>
+                <div class="order__section">
+                  <div class="legend">
+                    <div class="legend__i legend__i_type_free">
+                      свободные даны
+                    </div>
+                    <div class="legend__i legend__i_type_busy">
+                      занятые даны
+                    </div>
+                    <div class="legend__i legend__i_type_current">
+                      выбранная дана
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="order__content-cell">
+                <div class="order__section order__section_border_bottom">
+                  <div class="order__title">Свободное время</div>
+
+                  <div class="order-i">
+                    <div class="order-i__time">09:00</div>
+                    <div class="order-i__select">
+                      <div class="order-i__value">-</div>
+                      <div class="order-i__drop">
+                        <div class="order-i__drop-i" data-value="1">квест <b>№1</b></div>
+                        <div class="order-i__drop-i" data-value="2">квест <b>№2</b></div>
+                        <div class="order-i__drop-i" data-value="3">квест <b>№3</b></div>
+                        <div class="order-i__drop-i" data-value="4">квест <b>№4</b></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="order-i">
+                    <div class="order-i__time">09:40</div>
+                    <div class="order-i__select order-i__select_type_disabled">
+                      <div class="order-i__value">-</div>
+                    </div>
+                  </div>
+
+                  <div class="order-i">
+                    <div class="order-i__time">10:00</div>
+                    <div class="order-i__select">
+                      <div class="order-i__value">квест <b>№2</b></div>
+                      <div class="order-i__drop">
+                        <div class="order-i__drop-i" data-value="">-</div>
+                        <div class="order-i__drop-i" data-value="1">квест <b>№1</b></div>
+                        <div class="order-i__drop-i" data-value="2">квест <b>№2</b></div>
+                        <div class="order-i__drop-i" data-value="3">квест <b>№3</b></div>
+                        <div class="order-i__drop-i" data-value="4">квест <b>№4</b></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="order-i">
+                    <div class="order-i__time">11:50</div>
+                    <div class="order-i__select">
+                      <div class="order-i__value">-</div>
+                      <div class="order-i__drop">
+                        <div class="order-i__drop-i" data-value="">-</div>
+                        <div class="order-i__drop-i" data-value="1">квест <b>№1</b></div>
+                        <div class="order-i__drop-i" data-value="2">квест <b>№2</b></div>
+                        <div class="order-i__drop-i" data-value="3">квест <b>№3</b></div>
+                        <div class="order-i__drop-i" data-value="4">квест <b>№4</b></div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="order__content-cell">
+                <div class="order__section order__section_border_bottom">
+                  <div class="order__title">Укажите информацию<br /><b>для связи с Вами</b></div>
+                  <form action="" method="post">
+                    <div class="order__row">
+                      <input type="text" name="name" placeholder="Ваше имя" class="input" />
+                    </div>
+                    <div class="order__row">
+                      <input type="text" name="phone" placeholder="Телефон" class="input" />
+                    </div>
+                    <div class="order__row">
+                      <input type="text" name="email" placeholder="E-mail" class="input" />
+                    </div>
+                    <div class="order__row">
+                      <textarea name="comment" placeholder="Комментарий" class="input input_type_textarea"></textarea>
+                    </div>
+                    <div class="order__row order__row_type_action">
+                      <button type="submit" class="btn">Бронировать</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="news">
+    <div class="page__center">
+      <div class="page__relative page__relative_type_border1 page__relative_only_top news__content">
+        <div class="page__title-wrap">
+          <h2 class="page__title">
+            Новости
+          </h2>
+        </div>
+
+        <div class="news__i">
+          <div class="news__i-preview">
+            <img src="/uploads/news.jpg" alt="" class="news__i-img" />
+          </div>
+          <div class="news__i-content post">
+  <b>Дорогие друзья!</b> у нас регулярно появляются новые программы для того,
+  что бы было чем вас порадовать и удивить!<br />
+  Для подростков у нас появились еще 2 новые программы 
+  <b>"Караоке KIDS"</b> и <b>"БУМ УСЫ"</b><br />
+  Для более юных друзей масса новых костюмов, яркого тематического 
+  реквизита и программ.<br />
+  Все подробности по телефону (4822) 750-652<br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%= _.template(require('./../includes/footer.html'))() %>
+
+</body>
+</html>
