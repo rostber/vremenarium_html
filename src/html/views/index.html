@@ -243,7 +243,7 @@
             <div class="order__content-cart">
 
               <div class="order__content-cell">
-                <div class="order__section order__section_border_bottom js-datepicker"></div>
+                <div class="order__section order__section_border_bottom js-datepicker" data-exclude='["2019-09-18", "2019-09-17"]'></div>
                 <div class="order__section">
                   <div class="legend">
                     <div class="legend__i legend__i_type_free">
@@ -263,53 +263,7 @@
                 <div class="order__section order__section_border_bottom">
                   <div class="order__title">Свободное время</div>
 
-                  <div class="order-i">
-                    <div class="order-i__time">09:00</div>
-                    <div class="order-i__select">
-                      <div class="order-i__value">-</div>
-                      <div class="order-i__drop">
-                        <div class="order-i__drop-i" data-value="1">квест <b>№1</b></div>
-                        <div class="order-i__drop-i" data-value="2">квест <b>№2</b></div>
-                        <div class="order-i__drop-i" data-value="3">квест <b>№3</b></div>
-                        <div class="order-i__drop-i" data-value="4">квест <b>№4</b></div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="order-i">
-                    <div class="order-i__time">09:40</div>
-                    <div class="order-i__select order-i__select_type_disabled">
-                      <div class="order-i__value">-</div>
-                    </div>
-                  </div>
-
-                  <div class="order-i">
-                    <div class="order-i__time">10:00</div>
-                    <div class="order-i__select">
-                      <div class="order-i__value">квест <b>№2</b></div>
-                      <div class="order-i__drop">
-                        <div class="order-i__drop-i" data-value="">-</div>
-                        <div class="order-i__drop-i" data-value="1">квест <b>№1</b></div>
-                        <div class="order-i__drop-i" data-value="2">квест <b>№2</b></div>
-                        <div class="order-i__drop-i" data-value="3">квест <b>№3</b></div>
-                        <div class="order-i__drop-i" data-value="4">квест <b>№4</b></div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="order-i">
-                    <div class="order-i__time">11:50</div>
-                    <div class="order-i__select">
-                      <div class="order-i__value">-</div>
-                      <div class="order-i__drop">
-                        <div class="order-i__drop-i" data-value="">-</div>
-                        <div class="order-i__drop-i" data-value="1">квест <b>№1</b></div>
-                        <div class="order-i__drop-i" data-value="2">квест <b>№2</b></div>
-                        <div class="order-i__drop-i" data-value="3">квест <b>№3</b></div>
-                        <div class="order-i__drop-i" data-value="4">квест <b>№4</b></div>
-                      </div>
-                    </div>
-                  </div>
+                  <div class="js-order-times" data-orders='{"2019-09-22": ["09:40"]}' data-times='["09:00", "09:40", "10:00"]' data-quests="[1, 2, 3, 4]"></div>
 
                 </div>
               </div>
@@ -318,6 +272,9 @@
                 <div class="order__section order__section_border_bottom">
                   <div class="order__title">Укажите информацию<br /><b>для связи с Вами</b></div>
                   <form action="" method="post">
+                    <input type="hidden" name="date" class="js-order-date" value="" />
+                    <input type="hidden" name="time" class="js-order-time" value="" />
+                    <input type="hidden" name="quest" class="js-order-quest" value="" />
                     <div class="order__row">
                       <input type="text" name="name" placeholder="Ваше имя" class="input" />
                     </div>
