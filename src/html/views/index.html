@@ -271,26 +271,29 @@
               <div class="order__content-cell">
                 <div class="order__section order__section_border_bottom">
                   <div class="order__title">Укажите информацию<br /><b>для связи с Вами</b></div>
-                  <form action="" method="post">
+                  <div class="js-order-form">
                     <input type="hidden" name="date" class="js-order-date" value="" />
                     <input type="hidden" name="time" class="js-order-time" value="" />
                     <input type="hidden" name="quest" class="js-order-quest" value="" />
                     <div class="order__row">
-                      <input type="text" name="name" placeholder="Ваше имя" class="input" />
+                      <input type="text" name="name" placeholder="Ваше имя" class="input js-required" />
                     </div>
                     <div class="order__row">
-                      <input type="text" name="phone" placeholder="Телефон" class="input" />
+                      <input type="text" name="phone" placeholder="Телефон" class="input js-required" />
                     </div>
                     <div class="order__row">
-                      <input type="text" name="email" placeholder="E-mail" class="input" />
+                      <input type="text" name="email" placeholder="E-mail" class="input js-required" />
                     </div>
                     <div class="order__row">
                       <textarea name="comment" placeholder="Комментарий" class="input input_type_textarea"></textarea>
                     </div>
                     <div class="order__row order__row_type_action">
-                      <button type="submit" class="btn">Бронировать</button>
+                      <button class="btn js-order-submit">Бронировать</button>
                     </div>
-                  </form>
+                  </div>
+                  <div class="js-order-success order__success">
+                    Заявка отправлена
+                  </div>
                 </div>
               </div>
 

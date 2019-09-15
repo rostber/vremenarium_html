@@ -65,6 +65,10 @@ function init_order() {
     });
     select_date((new Date()).toISOString().slice(0,10));
   })
+
+  $('.js-order-submit').click(function() {
+    order_submit()
+  })
 }
 function select_date(date) {
   var $date = $('.js-order-date')
@@ -121,6 +125,36 @@ function order_select_bind() {
       $quest.val($(this).data('quest'))
     })
   })
+}
+function order_submit() {
+  var isError = false
+  $('.js-required').each(function() {
+    if (!$(this).val()) {
+      isError = true;
+      $(this).addClass('input_type_error')
+    } else {
+      $(this).removeClass('input_type_error')
+    }
+  })
+  if (!$('.js-order-quest').val()) {
+    isError = true
+    $('.order-i').addClass('input_type_error')
+  } else {
+    $('.order-i').removeClass('input_type_error')
+  }
+
+  if (!isError) {
+    var data = {}
+    $('.js-order-form input, .js-order-form textarea').each(function() {
+      data[$(this).prop('name')] = $(this).val()
+    })
+    $('.js-order-form').slideUp()
+    $('.js-order-success').slideDown()
+    $.post(
+      '/send_order',
+      data
+    )
+  }
 }
 
 function init_zoom() {
