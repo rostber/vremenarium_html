@@ -8,7 +8,25 @@ $(function() {
   init_slider();
   init_zoom();
   init_order();
+  init_scroll();
 });
+
+function init_scroll() {
+  $('.js-scroll a').click(function(e) {
+    var data = this.href.split('#')
+    var url = data[0]
+    var hash = data[1]
+    if (url === window.location.href.replace(/#.*/g, '')) {
+      var $el = $('#'+hash);
+      if ($el) {
+        e.preventDefault()
+        $('html, body').animate({
+          'scrollTop': $el.offset().top
+        }, 500)
+      }
+    }
+  })
+}
 
 function init_order() {
   var eventDates = ['20190914']
