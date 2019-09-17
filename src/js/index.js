@@ -5,7 +5,6 @@ require('slick-carousel');
 require('jquery-ui-bundle');
 
 $(function() {
-  init_slider();
   init_zoom();
   init_order();
   init_scroll();
@@ -151,7 +150,7 @@ function order_submit() {
     $('.js-order-form').slideUp()
     $('.js-order-success').slideDown()
     $.post(
-      '/send_order',
+      '/wp-json/api/v1/send_order',
       data
     )
   }
@@ -167,8 +166,8 @@ function init_zoom() {
   $('.js-modal').fancybox({
     baseClass: 'modal-wrap',
     afterShow: function(instance, current) {
-      bindZoom(current.$content);
-      init_slider(current.$content);
+      bindZoom($(current.$content));
+      init_slider($(current.$content));
     }
   });
 }
@@ -181,6 +180,18 @@ function init_slider($el) {
     speed: 300,
     nextArrow: '<span class="slider__next"></span>',
     prevArrow: '<span class="slider__prev"></span>',
-    slidesToShow: 3
+    responsive: [{
+      breakpoint: 1920,
+      settings: {
+        arrows: true,
+        slidesToShow: 3
+      }
+    }, {
+      breakpoint: 800,
+      settings: {
+        arrows: true,
+        slidesToShow: 1
+      }
+    }]
   });
 }
