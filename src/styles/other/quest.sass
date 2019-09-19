@@ -30,6 +30,11 @@
 
 .quest__picture
   margin-bottom: 20px
+  margin-left: 5px
+  display: inline-block
+
+.quest__picture_type_m
+  display: none
 
 .quest__title
   font-size: 32px
@@ -52,7 +57,49 @@
   font-size: 21px
   line-height: 1.1
   text-decoration: none
+  text-align: center
 
   &:hover
     background-color: #000
     color: #fff
+
+@media screen and (max-width: $width_mobile)
+
+  .quest__cart
+    padding: 15px 0
+
+  .quest__content
+    padding: 20px 0 47px 0
+
+  .quest__list
+    justify-content: center
+
+  .quest__i
+    min-width: 218px
+    padding: 10px
+
+  .quest__title
+    font-size: 19px
+
+  .quest__text
+    font-size: 13px
+
+  .quest__more-link
+    font-size: 13px
+    max-width: 116px
+    box-sizing: border-box
+    margin-left: auto
+    margin-right: auto
+    padding: 13px 25px
+
+  .quest__picture
+    margin-bottom: 10px
+
+  .quest__text
+    margin-bottom: 15px
+
+  .quest__picture_type_m
+    display: inline-block
+
+  .quest__picture_type_d
+    display: none

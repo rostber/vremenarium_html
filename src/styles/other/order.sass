@@ -91,6 +91,9 @@
 
 @media screen and (max-width: $width_mobile)
 
+  .order
+    padding: 30px 0
+
   .order__content-inside
     display: block
     background-color: transparent
@@ -101,9 +104,12 @@
     display: none
 
   .order__content-cart
-    padding: 0
-    background-color: transparent
+    padding: 10px 0
     display: block
+    background-color: #ff872f 
 
   .order__content-cell
-    margin-bottom: 30px
+    margin-bottom: 10px
+
+    &:last-child
+      margin-bottom: 0
