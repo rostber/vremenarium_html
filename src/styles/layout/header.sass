@@ -14,6 +14,7 @@
   line-height: 1.2
   margin: 0 30px
   position: relative
+  box-sizing: border-box
 
   &:after
     content: ''
@@ -55,5 +56,27 @@
 
 @media screen and (max-width: $width_mobile)
 
+  .header:before
+    content: ''
+    background: url('../img/bg_m.png') center top repeat-x
+    position: absolute
+    left: 0
+    top: 0
+    right: 0
+    height: 122px
+
+  .header__navi
+    margin: 0 0 0 20px
+    padding: 8px 0
+    text-align: left
+
   .header__navi-i, .header__navi li
-    font-size: 16px
+    width: 50%
+    margin: 0
+    padding-left: 3px
+    border-left: 2px solid #fff
+    font-size: 14px
+    line-height: 1.1
+
+    &:after
+      display: none
